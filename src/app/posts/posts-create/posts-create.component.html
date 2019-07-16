@@ -1,12 +1,10 @@
-<h2>Post Create</h2>
+<mat-card>
+  <mat-form-field>
+    <textarea matInput rows="10" [(ngModel)]="enteredText"></textarea>
+  </mat-form-field>
 
-<div>
-  <textarea rows="10" [(ngModel)]="enteredText"></textarea>
-</div>
-
-<div>
-  <button (click)="onAddPost()">Save post</button>
-</div>
+  <button mat-raised-button color="primary" (click)="onAddPost()">Save post</button>
+</mat-card>
 
 <div *ngIf="post != ''">
   <h3>Post Preview</h3>
