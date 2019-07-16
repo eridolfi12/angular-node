@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsCreateComponent implements OnInit {
 
+  public post: any = '';
+  public enteredText: any = '';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onAddPost() {
+    console.dir(this.enteredText);
+    this.post = this.enteredText;
   }
 
 }

@@ -1,3 +1,15 @@
-<p>
-  posts-create works!
-</p>
+<h2>Post Create</h2>
+
+<div>
+  <textarea rows="10" [(ngModel)]="enteredText"></textarea>
+</div>
+
+<div>
+  <button (click)="onAddPost()">Save post</button>
+</div>
+
+<div *ngIf="post != ''">
+  <h3>Post Preview</h3>
+  {{post}}
+</div>
+
