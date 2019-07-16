@@ -6,19 +6,22 @@ import {
   MatInputModule,
   MatCardModule,
   MatButtonModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatExpansionModule
 } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsCreateComponent } from './posts/posts-create/posts-create.component';
 import { HeaderComponent } from './header/header.component';
+import { PostsListComponent } from './posts/posts-list/posts-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsCreateComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostsListComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { HeaderComponent } from './header/header.component';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
