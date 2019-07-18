@@ -15,13 +15,15 @@ import { AppComponent } from './app.component';
 import { PostsCreateComponent } from './posts/posts-create/posts-create.component';
 import { HeaderComponent } from './header/header.component';
 import { PostsListComponent } from './posts/posts-list/posts-list.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsCreateComponent,
     HeaderComponent,
-    PostsListComponent
+    PostsListComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
